@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Finances</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="pass">Contraseña</string>
+    <string name="title">My Finances</string>
+    <string name="send" >Acceder</>
 </resources>
