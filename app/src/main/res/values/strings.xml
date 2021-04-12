@@ -3,11 +3,13 @@
     <string name="email">Correo Electrónico</string>
     <string name="pass">Contraseña</string>
     <string name="title">My Finances</string>
-    <string name="send" >Acceder</>
+    <string name="send" >Acceder</string>
     <string name="error_pass">*Campo Obligatorio</string>
     <string name="name">Nombre de Usuario</string>
     <string name="repeatpass">Repetir Contraseña</string>
     <string name="register">Registrar</string>
     <string name="title2">Crear Usuario</string>
     <string name="fieldcheck">* Obligatorio</string>
+    <string name="Forgetpass">¿Has olvidado tu Contraseña?</string>
+    <string name="image">splash</string>
 </resources>
