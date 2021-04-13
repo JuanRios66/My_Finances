@@ -23,11 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:hint="@string/name"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
+        app:endIconMode="clear_text"
         app:helperTextEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -43,10 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/email"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopStart="20dp">
+        app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/textemail"
@@ -61,11 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/pass"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
+        app:helperTextEnabled="true"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -81,11 +70,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/repeatpass"
-        app:boxBackgroundMode="outline"
-        app:boxCornerRadiusBottomEnd="20dp"
-        app:boxCornerRadiusBottomStart="20dp"
-        app:boxCornerRadiusTopEnd="20dp"
-        app:boxCornerRadiusTopStart="20dp"
         app:helperTextEnabled="true"
         app:passwordToggleEnabled="true">
 
@@ -98,12 +82,12 @@
 
     <Button
         android:id="@+id/registrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:text="@string/register"
         android:textSize="18sp"
-        app:cornerRadius="20dp" />
+        app:cornerRadius="16sp" />
 
 </LinearLayout>

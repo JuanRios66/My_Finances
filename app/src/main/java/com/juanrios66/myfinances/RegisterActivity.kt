@@ -18,19 +18,20 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(registerBinding.root)
 
         registerBinding.textpass2.setOnClickListener {
-            registerBinding.reppassLayout.error = null
-            registerBinding.textpass2.setText("")
+            if (registerBinding.reppassLayout.error == getString(R.string.coincidencia)) {
+                registerBinding.reppassLayout.error = null
+                registerBinding.textpass2.setText("")
+            }
         }
 
         registerBinding.registrar.setOnClickListener{
             val name = registerBinding.textname.text.toString()
             val email = registerBinding.textemail.text.toString()
             val password = registerBinding.textpass.text.toString()
-            val repeatpass = registerBinding.textpass2.text.toString()
             if (name.isNotEmpty() && email.isNotEmpty() && password.isNotEmpty()) {
-                if (password == repeatpass) {
+                if (password == registerBinding.textpass2.text.toString()) {
                     registerBinding.reppassLayout.error = null
-                    var intent = Intent()
+                    val intent = Intent()
                     val bundle = Bundle()
                     val user = Users(name, email, password)
                     bundle.putSerializable("user", user)

@@ -1,5 +1,6 @@
 package com.juanrios66.myfinances
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,30 +17,28 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
-        var data = intent.extras
-        mainBinding.emailtextview.text= data?.getString("email")
-
-
+        val data = intent.extras
+        this.title = data?.getString("nick")
+        mainBinding.emailtextview.text = data?.getString("email")
+        mainBinding.passwordtextview.text = data?.getString("pass")
         Log.d("metodo","onCreate")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
         return true
-
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.logout_menu->{
-                onBackPressed()
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onBackPressed() { //No se esta usando solo invocando
-        super.onBackPressed()
-    }
     override fun onStart() {
         super.onStart()
         Log.d("metodo","onStart")
