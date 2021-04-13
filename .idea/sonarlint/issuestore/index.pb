@@ -17,3 +17,11 @@ N
 app/src/main/res/menu/menu.xml,4\5\453a7c90e2bbd5580c6bce7f2f1d9a85b2c089db
 d
 4app/src/main/java/com/juanrios66/myfinances/Users.kt,c\7\c755f5cd41b2bac8673e6d6bf9f1e94233e1d4cb
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+d
+4app/src/main/res/drawable/ic_launcher_background.xml,4\9\49845c622cb06d895975c7b1e3f943e320bce688
+h
+8app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml,6\e\6ec7d34b130497a10dc92abcde9b313d370a89df
