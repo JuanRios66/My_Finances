@@ -3,7 +3,6 @@ package com.juanrios66.myfinances
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.strictmode.IntentReceiverLeakedViolation
 import android.view.Window
 import java.util.*
 import kotlin.concurrent.timerTask

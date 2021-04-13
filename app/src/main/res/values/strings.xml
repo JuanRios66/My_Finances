@@ -1,21 +1,21 @@
 <resources>
     <string name="app_name">My Finances</string>
-    <string name="email">Correo Electrónico</string>
+    <string name="email">Correo electrónico</string>
     <string name="pass">Contraseña</string>
     <string name="title">My Finances</string>
-    <string name="send" >Iniciar Sesión</string>
-    <string name="error_pass">*Campo Obligatorio</string>
-    <string name="name">Nombre de Usuario</string>
-    <string name="repeatpass">Repetir Contraseña</string>
+    <string name="send" >Iniciar sesión</string>
+    <string name="error_pass">*Campo obligatorio</string>
+    <string name="name">Nombre de usuario</string>
+    <string name="repeatpass">Repetir contraseña</string>
     <string name="register">Registrar</string>
-    <string name="title2">Crear Usuario</string>
+    <string name="title2">Crear usuario</string>
     <string name="fieldcheck">* Obligatorio</string>
-    <string name="Forgetpass">¿Has olvidado tu Contraseña?</string>
+    <string name="Forgetpass">¿Has olvidado tu contraseña?</string>
     <string name="image">splash</string>
-    <string name="logout">Cerrar Sesión</string>
-    <string name="errorlogin">Verifique el Correo o Registrese</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="errorlogin">Verifique el correo o regístrese</string>
     <string name="errorregister">Verifique todos los campos</string>
-    <string name="errorpass">Contraseña Incorrecta</string>
+    <string name="errorpass">Contraseña incorrecta</string>
     <string name="gotoregister">Regístrate</string>
-    <string name="coincidencia">Las contraseñas no Coinciden</string>
+    <string name="coincidencia">Las contraseñas no coinciden</string>
 </resources>
