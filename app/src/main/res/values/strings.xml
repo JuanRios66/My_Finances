@@ -3,7 +3,7 @@
     <string name="email">Correo Electrónico</string>
     <string name="pass">Contraseña</string>
     <string name="title">My Finances</string>
-    <string name="send" >Acceder</string>
+    <string name="send" >Iniciar Sesión</string>
     <string name="error_pass">*Campo Obligatorio</string>
     <string name="name">Nombre de Usuario</string>
     <string name="repeatpass">Repetir Contraseña</string>
@@ -12,4 +12,10 @@
     <string name="fieldcheck">* Obligatorio</string>
     <string name="Forgetpass">¿Has olvidado tu Contraseña?</string>
     <string name="image">splash</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="errorlogin">Verifique el Correo o Registrese</string>
+    <string name="errorregister">Verifique todos los campos</string>
+    <string name="errorpass">Contraseña Incorrecta</string>
+    <string name="gotoregister">Regístrate</string>
+    <string name="coincidencia">Las contraseñas no Coinciden</string>
 </resources>
