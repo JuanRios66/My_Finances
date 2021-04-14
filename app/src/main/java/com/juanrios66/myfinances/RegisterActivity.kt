@@ -42,7 +42,7 @@ class RegisterActivity : AppCompatActivity() {
                     registerBinding.reppassLayout.error = getString(R.string.coincidencia)
                 }
             } else {
-                Toast.makeText(this, getString(R.string.register), Toast.LENGTH_LONG).show()
+                Toast.makeText(this, getString(R.string.errorregister), Toast.LENGTH_LONG).show()
             }
         }
 
