@@ -1,5 +1,6 @@
 package com.juanrios66.myfinances
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,6 +12,8 @@ import com.juanrios66.myfinances.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainBinding: ActivityMainBinding
+    private var usuarios: MutableList<Users> = mutableListOf()
+    private lateinit var user: Users
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         this.title = data?.getString("nick")
         mainBinding.emailtextview.text = data?.getString("email")
         mainBinding.passwordtextview.text = data?.getString("pass")
+        user = Users(data?.getString("nick"), data?.getString("email"), data?.getString("pass"))
+        usuarios.add(user)
+
         Log.d("metodo","onCreate")
     }
 
@@ -32,6 +38,9 @@ class MainActivity : AppCompatActivity() {
         when(item.itemId){
             R.id.logout_menu->{
                 val intent = Intent(this, LoginActivity::class.java)
+                val bundle = Bundle()
+                bundle.putSerializable("user", user)
+                intent.putExtras((bundle))
                 startActivity(intent)
                 finish()
             }
@@ -69,3 +78,5 @@ class MainActivity : AppCompatActivity() {
         Log.d("metodo","onDestroy")
     }
 }
+
+

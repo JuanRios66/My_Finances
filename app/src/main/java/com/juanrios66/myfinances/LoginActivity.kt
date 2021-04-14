@@ -24,6 +24,9 @@ class LoginActivity : AppCompatActivity() {
 
         // Modo test: Usar para evitar registro ya que no se cuenta con base de datos aun
         usuarios.add(Users("1", "1", "1"))
+        if (intent.hasExtra("user")) {
+            usuarios.add(intent.getSerializableExtra("user") as Users)
+        }
 
         loginBinding.textpassword.setOnClickListener {
             if (loginBinding.layoutpass.error == getString(R.string.errorpass)) {
@@ -32,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        loginBinding.buttonlogin.setOnClickListener{
+        loginBinding.buttonlogin.setOnClickListener {
             for (u in usuarios) {
                 if (loginBinding.textemail.text.toString() == u.email) {
                     banEmail = true
@@ -42,26 +45,25 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
             }
-            if(banEmail){
-                if(banPass){
+            if (banEmail) {
+                if (banPass) {
                     banEmail = false
                     banPass = false
                     val intent = Intent(this, MainActivity::class.java)
                     intent.putExtra("email", loginBinding.textemail.text.toString())
                     intent.putExtra("pass", loginBinding.textpassword.text.toString())
                     intent.putExtra("nick", nick)
-
+                    //startActivityForResult(intent,2)
                     startActivity(intent)
-                    finish()
-                }else{
+                } else {
                     loginBinding.layoutpass.error = getString(R.string.errorpass)
                 }
-            }else{
+            } else {
                 Toast.makeText(this, getString(R.string.errorlogin), Toast.LENGTH_LONG).show()
             }
         }
 
-        loginBinding.buttonToRegister.setOnClickListener{
+        loginBinding.buttonToRegister.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivityForResult(intent, 1)
         }

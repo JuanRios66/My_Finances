@@ -24,7 +24,7 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
-        registerBinding.registrar.setOnClickListener{
+        registerBinding.registrar.setOnClickListener {
             val name = registerBinding.textname.text.toString()
             val email = registerBinding.textemail.text.toString()
             val password = registerBinding.textpass.text.toString()
@@ -38,7 +38,7 @@ class RegisterActivity : AppCompatActivity() {
                     intent.putExtras(bundle)
                     setResult(Activity.RESULT_OK, intent)
                     finish()
-                }else{
+                } else {
                     registerBinding.reppassLayout.error = getString(R.string.coincidencia)
                 }
             } else {
