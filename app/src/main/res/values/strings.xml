@@ -7,7 +7,7 @@
     <string name="error_pass">*Campo obligatorio</string>
     <string name="name">Nombre de usuario</string>
     <string name="repeatpass">Repetir contraseña</string>
-    <string name="register">Registrar</string>
+    <string name="register">Registrarse</string>
     <string name="title2">Crear usuario</string>
     <string name="fieldcheck">* Obligatorio</string>
     <string name="Forgetpass">¿Has olvidado tu contraseña?</string>
@@ -18,4 +18,5 @@
     <string name="errorpass">Contraseña incorrecta</string>
     <string name="gotoregister">Regístrate</string>
     <string name="coincidencia">Las contraseñas no coinciden</string>
+    <string name="my_finance">MyFinance</string>
 </resources>

@@ -20,9 +20,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:hint="@string/name"
         app:endIconMode="clear_text"
         app:helperTextEnabled="true">
@@ -36,6 +37,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -51,6 +53,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/pass_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -67,6 +70,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/reppass_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -83,12 +87,11 @@
 
     <Button
         android:id="@+id/registrar"
-        android:layout_width="200dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:text="@string/register"
         android:textSize="18sp"
-        app:cornerRadius="16sp" />
+        app:cornerRadius="16dp" />
 
 </LinearLayout>

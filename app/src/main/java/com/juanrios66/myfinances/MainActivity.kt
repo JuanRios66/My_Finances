@@ -1,12 +1,11 @@
 package com.juanrios66.myfinances
 
-import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.juanrios66.myfinances.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -27,16 +26,17 @@ class MainActivity : AppCompatActivity() {
         user = Users(data?.getString("nick"), data?.getString("email"), data?.getString("pass"))
         usuarios.add(user)
 
-        Log.d("metodo","onCreate")
+        Log.d("metodo", "onCreate")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.logout_menu->{
+        when (item.itemId) {
+            R.id.logout_menu -> {
                 val intent = Intent(this, LoginActivity::class.java)
                 val bundle = Bundle()
                 bundle.putSerializable("user", user)
@@ -50,32 +50,32 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d("metodo","onStart")
+        Log.d("metodo", "onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("metodo","onResume")
+        Log.d("metodo", "onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("metodo","onPause")
+        Log.d("metodo", "onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("metodo","onStop")
+        Log.d("metodo", "onStop")
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d("metodo","onRestart")
+        Log.d("metodo", "onRestart")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("metodo","onDestroy")
+        Log.d("metodo", "onDestroy")
     }
 }
 
