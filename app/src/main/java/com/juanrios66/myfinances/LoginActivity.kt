@@ -53,8 +53,8 @@ class LoginActivity : AppCompatActivity() {
                     intent.putExtra("email", loginBinding.textemail.text.toString())
                     intent.putExtra("pass", loginBinding.textpassword.text.toString())
                     intent.putExtra("nick", nick)
-                    //startActivityForResult(intent,2)
                     startActivity(intent)
+                    finish()
                 } else {
                     loginBinding.layoutpass.error = getString(R.string.errorpass)
                 }
