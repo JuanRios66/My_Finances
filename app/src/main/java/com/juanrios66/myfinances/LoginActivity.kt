@@ -1,13 +1,14 @@
 package com.juanrios66.myfinances
 
-import Utils.*
+import Utils.EMPTY
+import Utils.emailValidator
+import Utils.passValidator
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
-import com.juanrios66.myfinances.R.id.buttonlogin
 import com.juanrios66.myfinances.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -17,6 +18,9 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var nick: String
     private var banEmail = false
     private var banPass = false
+    private var condicion = booleanArrayOf(false, false)
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,18 +43,25 @@ class LoginActivity : AppCompatActivity() {
         loginBinding.textemail.doAfterTextChanged {
             if (!emailValidator(loginBinding.textemail.text.toString())) {
                 loginBinding.layoutemail.error = getString(R.string.email_invalido)
+                condicion[0]=false
             } else {
                 loginBinding.layoutemail.error = null
+                condicion[0]=true
             }
+            loginBinding.buttonlogin.isEnabled= condicion.all{it}
         }
 
         loginBinding.textpassword.doAfterTextChanged {
             if (!passValidator(loginBinding.textpassword.text.toString())) {
                 loginBinding.layoutpass.error = getString(R.string.digits6)
+                condicion[1]=false
             } else {
                 loginBinding.layoutpass.error = null
+                condicion[1]=true
             }
+            loginBinding.buttonlogin.isEnabled= condicion.all{it}
         }
+
 
         loginBinding.buttonlogin.setOnClickListener {
             for (u in usuarios) {
