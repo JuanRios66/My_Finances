@@ -1,10 +1,16 @@
 package com.juanrios66.myfinances
 
+import Utils.emailValidator
+import Utils.nameValidator
+import Utils.passValidator
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doAfterTextChanged
+import androidx.core.widget.doBeforeTextChanged
 import com.juanrios66.myfinances.databinding.ActivityRegisterBinding
 
 
@@ -46,5 +52,28 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
+        registerBinding.textpass.doAfterTextChanged() {
+            if (!passValidator(registerBinding.textpass.text.toString())) {
+                registerBinding.passLayout.error = getString(R.string.digits6)
+            } else {
+                registerBinding.passLayout.error = null
+            }
+        }
+
+        registerBinding.textname.doAfterTextChanged() {
+            if (!nameValidator(registerBinding.textname.text.toString())) {
+                registerBinding.nameLayout.error = getString(R.string.digits8)
+            } else {
+                registerBinding.nameLayout.error = null
+            }
+        }
+
+        registerBinding.textemail.doAfterTextChanged {
+            if (!emailValidator(registerBinding.textemail.text.toString())) {
+                registerBinding.emailLayout.error = getString(R.string.email_invalido)
+            } else {
+                registerBinding.emailLayout.error = null
+            }
+        }
     }
 }

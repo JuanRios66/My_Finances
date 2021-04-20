@@ -1,13 +1,14 @@
 package com.juanrios66.myfinances
 
+import Utils.*
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doAfterTextChanged
+import com.juanrios66.myfinances.R.id.buttonlogin
 import com.juanrios66.myfinances.databinding.ActivityLoginBinding
-
-const val EMPTY = ""
 
 class LoginActivity : AppCompatActivity() {
 
@@ -32,6 +33,22 @@ class LoginActivity : AppCompatActivity() {
             if (loginBinding.layoutpass.error == getString(R.string.errorpass)) {
                 loginBinding.layoutpass.error = null
                 loginBinding.textpassword.setText(EMPTY)
+            }
+        }
+
+        loginBinding.textemail.doAfterTextChanged {
+            if (!emailValidator(loginBinding.textemail.text.toString())) {
+                loginBinding.layoutemail.error = getString(R.string.email_invalido)
+            } else {
+                loginBinding.layoutemail.error = null
+            }
+        }
+
+        loginBinding.textpassword.doAfterTextChanged {
+            if (!passValidator(loginBinding.textpassword.text.toString())) {
+                loginBinding.layoutpass.error = getString(R.string.digits6)
+            } else {
+                loginBinding.layoutpass.error = null
             }
         }
 
