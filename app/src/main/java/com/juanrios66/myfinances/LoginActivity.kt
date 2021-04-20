@@ -21,7 +21,6 @@ class LoginActivity : AppCompatActivity() {
     private var condicion = booleanArrayOf(false, false)
 
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         loginBinding = ActivityLoginBinding.inflate(layoutInflater)
@@ -43,23 +42,23 @@ class LoginActivity : AppCompatActivity() {
         loginBinding.textemail.doAfterTextChanged {
             if (!emailValidator(loginBinding.textemail.text.toString())) {
                 loginBinding.layoutemail.error = getString(R.string.email_invalido)
-                condicion[0]=false
+                condicion[0] = false
             } else {
                 loginBinding.layoutemail.error = null
-                condicion[0]=true
+                condicion[0] = true
             }
-            loginBinding.buttonlogin.isEnabled= condicion.all{it}
+            loginBinding.buttonlogin.isEnabled = condicion.all { it }
         }
 
         loginBinding.textpassword.doAfterTextChanged {
             if (!passValidator(loginBinding.textpassword.text.toString())) {
                 loginBinding.layoutpass.error = getString(R.string.digits6)
-                condicion[1]=false
+                condicion[1] = false
             } else {
                 loginBinding.layoutpass.error = null
-                condicion[1]=true
+                condicion[1] = true
             }
-            loginBinding.buttonlogin.isEnabled= condicion.all{it}
+            loginBinding.buttonlogin.isEnabled = condicion.all { it }
         }
 
 

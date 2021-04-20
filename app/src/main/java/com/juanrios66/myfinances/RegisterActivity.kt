@@ -6,13 +6,10 @@ import Utils.passValidator
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
-import androidx.core.widget.doBeforeTextChanged
 import com.juanrios66.myfinances.databinding.ActivityRegisterBinding
-
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -53,37 +50,37 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
 
-        registerBinding.textpass.doAfterTextChanged() {
+        registerBinding.textpass.doAfterTextChanged {
             if (!passValidator(registerBinding.textpass.text.toString())) {
                 registerBinding.passLayout.error = getString(R.string.digits6)
-                condicion[0]=false
+                condicion[0] = false
             } else {
                 registerBinding.passLayout.error = null
-                condicion[0]=true
+                condicion[0] = true
             }
-            registerBinding.registrar.isEnabled= condicion.all{it}
+            registerBinding.registrar.isEnabled = condicion.all { it }
         }
 
-        registerBinding.textname.doAfterTextChanged() {
+        registerBinding.textname.doAfterTextChanged {
             if (!nameValidator(registerBinding.textname.text.toString())) {
                 registerBinding.nameLayout.error = getString(R.string.digits8)
-                condicion[1]=false
+                condicion[1] = false
             } else {
                 registerBinding.nameLayout.error = null
-                condicion[1]=true
+                condicion[1] = true
             }
-            registerBinding.registrar.isEnabled= condicion.all{it}
+            registerBinding.registrar.isEnabled = condicion.all { it }
         }
 
         registerBinding.textemail.doAfterTextChanged {
             if (!emailValidator(registerBinding.textemail.text.toString())) {
                 registerBinding.emailLayout.error = getString(R.string.email_invalido)
-                condicion[2]=false
+                condicion[2] = false
             } else {
                 registerBinding.emailLayout.error = null
-                condicion[2]=true
+                condicion[2] = true
             }
-            registerBinding.registrar.isEnabled= condicion.all{it}
+            registerBinding.registrar.isEnabled = condicion.all { it }
         }
     }
 }

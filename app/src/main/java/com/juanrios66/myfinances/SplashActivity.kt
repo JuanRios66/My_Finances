@@ -1,9 +1,9 @@
 package com.juanrios66.myfinances
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
+import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 import kotlin.concurrent.timerTask
 
@@ -13,11 +13,11 @@ class SplashActivity : AppCompatActivity() {
         this.supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_splash)
 
-        val timer= Timer()
+        val timer = Timer()
         timer.schedule(timerTask { goToLoginActivity() }, 2000)
-
     }
-    private fun goToLoginActivity(){
+
+    private fun goToLoginActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
