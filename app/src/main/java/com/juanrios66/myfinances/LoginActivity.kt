@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(loginBinding.root)
 
         // Modo test: Usar para evitar registro ya que no se cuenta con base de datos aun
-        usuarios.add(Users("1", "1", "1"))
+        usuarios.add(Users("kdmz1999", "kevinmartinez9907@gmail.com", "123456"))
         if (intent.hasExtra("user")) {
             usuarios.add(intent.getSerializableExtra("user") as Users)
         }

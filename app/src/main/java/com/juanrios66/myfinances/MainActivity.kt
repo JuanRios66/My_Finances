@@ -6,6 +6,11 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.juanrios66.myfinances.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,10 +24,24 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
+        val navView: BottomNavigationView = findViewById(R.id.nav_view)
+
+        val navController = findNavController(R.id.nav_host_fragment)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.navigation_registro,
+                R.id.navigation_estadisticas,
+                R.id.navigation_bienes,
+                R.id.navigation_ajustes
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
+
         val data = intent.extras
         this.title = data?.getString("nick")
-        mainBinding.emailtextview.text = data?.getString("email")
-        mainBinding.passwordtextview.text = data?.getString("pass")
         user = Users(data?.getString("nick"), data?.getString("email"), data?.getString("pass"))
         usuarios.add(user)
 

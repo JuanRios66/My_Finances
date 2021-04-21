@@ -13,8 +13,6 @@ m
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-N
-app/src/main/res/menu/menu.xml,4\5\453a7c90e2bbd5580c6bce7f2f1d9a85b2c089db
 d
 4app/src/main/java/com/juanrios66/myfinances/Users.kt,c\7\c755f5cd41b2bac8673e6d6bf9f1e94233e1d4cb
 S
@@ -27,8 +25,6 @@ h
 8app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml,6\e\6ec7d34b130497a10dc92abcde9b313d370a89df
 b
 2app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml,8\e\8e27ba16c655f421171956147d0fde89b7d25d17
-R
-"app/src/main/res/values/themes.xml,e\b\eb7f0f821bde169dd21862705b2b042d2cea69a3
 X
 (app/src/main/res/values-night/themes.xml,8\c\8c3a6b96d9ffba496992e612d58227c19e6b9e65
 9
@@ -37,3 +33,11 @@ P
  app/src/main/java/Utils/Const.kt,a\2\a2d9072ebebe59a1b49c358db0d21571b4ff5d43
 U
 %app/src/main/java/Utils/Validators.kt,4\2\42fef639a2e45611207a1fc0d00a27a5021c0b26
+o
+?app/src/main/java/com/juanrios66/myfinances/ajustes_fragment.kt,c\9\c9fcb1c3a40681bcaa02b4c67cefa94e3d57d1f5
+t
+Dapp/src/main/java/com/juanrios66/myfinances/estadisticas_fragment.kt,c\f\cf29bddd8eb7bbcc3d1b360bd718547b915c015f
+n
+>app/src/main/java/com/juanrios66/myfinances/bienes_fragment.kt,d\a\da25dfce6718f212aff9bbf602ab39157a33cc6b
+p
+@app/src/main/java/com/juanrios66/myfinances/registro_fragment.kt,7\c\7c554c14b95a26230673c315b7034e0731a2dece
