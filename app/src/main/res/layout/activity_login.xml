@@ -9,25 +9,23 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
         android:contentDescription="@string/my_finance"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/myfinances" />
+        app:srcCompat="@drawable/icon_splash" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layoutemail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:hint="@string/email"
         app:endIconMode="clear_text"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="150"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
@@ -35,9 +33,7 @@
             android:id="@+id/textemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            android:textSize="18sp" />
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -45,8 +41,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:focusableInTouchMode="true"
+        android:hint="@string/pass"
         app:errorEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,16 +53,13 @@
             android:id="@+id/textpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/pass"
-            android:inputType="textPassword"
-            android:textSize="18sp" />
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/forgetpass"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
         android:clickable="true"
         android:focusable="true"
         android:text="@string/Forgetpass"
@@ -76,12 +69,11 @@
 
     <Button
         android:id="@+id/buttonlogin"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:enabled="false"
         android:text="@string/send"
-        android:textSize="18sp"
         android:visibility="visible"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,14 +83,11 @@
     <Button
         android:id="@+id/button_to_register"
         style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/gotoregister"
-        android:textSize="18sp"
         app:cornerRadius="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonlogin" />
 

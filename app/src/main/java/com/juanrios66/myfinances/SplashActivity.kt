@@ -14,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         val timer = Timer()
-        timer.schedule(timerTask { goToLoginActivity() }, 2000)
+        timer.schedule(timerTask { goToLoginActivity() }, 1500)
     }
 
     private fun goToLoginActivity() {

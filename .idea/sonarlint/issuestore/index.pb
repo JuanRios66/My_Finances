@@ -1,20 +1,8 @@
 
-k
-;app/src/main/java/com/juanrios66/myfinances/MainActivity.kt,5\4\5434bf06e33f5ba23f68715f40212cd472cbebc9
-m
-=app/src/main/java/com/juanrios66/myfinances/SplashActivity.kt,4\c\4cf6f2314ac12bfb62aa401ea40c09ed76c3d9a9
-l
-<app/src/main/java/com/juanrios66/myfinances/LoginActivity.kt,6\2\6255343404b4e9ccbbd09d0b1d775f56112cf06b
-o
-?app/src/main/java/com/juanrios66/myfinances/RegisterActivity.kt,c\f\cfb1f0f5e5ecf2c99abff0e06fe152287386e660
 m
 =app/src/main/res/drawable/ic_baseline_app_registration_24.xml,d\5\d5ede95a6aff4bafdd58349c823bebe4ac910256
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-d
-4app/src/main/java/com/juanrios66/myfinances/Users.kt,c\7\c755f5cd41b2bac8673e6d6bf9f1e94233e1d4cb
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 <
@@ -27,17 +15,31 @@ b
 2app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml,8\e\8e27ba16c655f421171956147d0fde89b7d25d17
 X
 (app/src/main/res/values-night/themes.xml,8\c\8c3a6b96d9ffba496992e612d58227c19e6b9e65
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 P
  app/src/main/java/Utils/Const.kt,a\2\a2d9072ebebe59a1b49c358db0d21571b4ff5d43
 U
 %app/src/main/java/Utils/Validators.kt,4\2\42fef639a2e45611207a1fc0d00a27a5021c0b26
 o
 ?app/src/main/java/com/juanrios66/myfinances/ajustes_fragment.kt,c\9\c9fcb1c3a40681bcaa02b4c67cefa94e3d57d1f5
-t
-Dapp/src/main/java/com/juanrios66/myfinances/estadisticas_fragment.kt,c\f\cf29bddd8eb7bbcc3d1b360bd718547b915c015f
 n
 >app/src/main/java/com/juanrios66/myfinances/bienes_fragment.kt,d\a\da25dfce6718f212aff9bbf602ab39157a33cc6b
 p
 @app/src/main/java/com/juanrios66/myfinances/registro_fragment.kt,7\c\7c554c14b95a26230673c315b7034e0731a2dece
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+d
+4app/src/main/java/com/juanrios66/myfinances/Users.kt,c\7\c755f5cd41b2bac8673e6d6bf9f1e94233e1d4cb
+m
+=app/src/main/java/com/juanrios66/myfinances/SplashActivity.kt,4\c\4cf6f2314ac12bfb62aa401ea40c09ed76c3d9a9
+o
+?app/src/main/java/com/juanrios66/myfinances/RegisterActivity.kt,c\f\cfb1f0f5e5ecf2c99abff0e06fe152287386e660
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+l
+<app/src/main/java/com/juanrios66/myfinances/LoginActivity.kt,6\2\6255343404b4e9ccbbd09d0b1d775f56112cf06b
+k
+;app/src/main/java/com/juanrios66/myfinances/MainActivity.kt,5\4\5434bf06e33f5ba23f68715f40212cd472cbebc9
+t
+Dapp/src/main/java/com/juanrios66/myfinances/estadisticas_fragment.kt,c\f\cf29bddd8eb7bbcc3d1b360bd718547b915c015f
+{
+Kapp/src/main/java/com/juanrios66/myfinances/ui/main/SectionsPagerAdapter.kt,8\8\8876b5832671e46ec8b9b6f052f70728806dd1fa

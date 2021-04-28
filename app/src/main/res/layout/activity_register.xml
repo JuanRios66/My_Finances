@@ -12,10 +12,10 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
         android:gravity="center"
         android:text="@string/title2"
-        android:textSize="34sp"
+        android:textSize="36sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -23,7 +23,6 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:hint="@string/name"
         app:endIconMode="clear_text"
         app:errorEnabled="true"
@@ -41,7 +40,6 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:hint="@string/email"
         app:endIconMode="clear_text"
         app:errorEnabled="true">
@@ -58,7 +56,6 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:hint="@string/pass"
         app:errorEnabled="true"
         app:helperTextEnabled="true"
@@ -76,7 +73,6 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:hint="@string/repeatpass"
         app:errorEnabled="true"
         app:helperTextEnabled="true"
@@ -91,12 +87,11 @@
 
     <Button
         android:id="@+id/registrar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:enabled="false"
         android:text="@string/register"
-        android:textSize="18sp"
         android:visibility="visible"
         app:cornerRadius="16dp" />
 
