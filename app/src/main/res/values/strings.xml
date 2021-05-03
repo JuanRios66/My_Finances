@@ -26,6 +26,11 @@
     <string name="estad_sticas">Estadísticas</string>
     <string name="bienes">Bienes</string>
     <string name="ajustes">Ajustes</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="gastos">Gastos</string>
+    <string name="diario">Diario</string>
+    <string name="semanal">Semanal</string>
+    <string name="mensual">Mensual</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="label_registro">En este fragmento registrarás el diario de tus gastos e ingresos</string>
