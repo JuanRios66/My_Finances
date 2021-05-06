@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ingresos_fragment">
+    tools:context=".fragments.estadisticas.sub_fragments.ingresos_fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

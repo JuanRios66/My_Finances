@@ -5,6 +5,10 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.juanrios66.myfinances.*
+import com.juanrios66.myfinances.fragments.registro.sub_fragments.diario_fragment
+import com.juanrios66.myfinances.fragments.registro.sub_fragments.mensual_fragment
+import com.juanrios66.myfinances.fragments.registro.registro_fragment
+import com.juanrios66.myfinances.fragments.registro.sub_fragments.semanal_fragment
 
 private val TAB_TITLES = arrayOf(
     R.string.diario,

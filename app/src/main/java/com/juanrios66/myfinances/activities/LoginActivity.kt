@@ -1,4 +1,4 @@
-package com.juanrios66.myfinances
+package com.juanrios66.myfinances.activities
 
 import Utils.EMPTY
 import Utils.emailValidator
@@ -9,6 +9,8 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
+import com.juanrios66.myfinances.R
+import com.juanrios66.myfinances.Users
 import com.juanrios66.myfinances.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
