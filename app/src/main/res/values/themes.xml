@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.MyFinances" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#F4A911</item>        <!--Color de barras y botones-->
-        <item name="colorPrimaryVariant">#954202</item> <!--Barra de notificaciones-->
+        <item name="colorPrimary">#FF0000</item>        <!--Color de barras y botones-->
+        <item name="colorPrimaryVariant">#80FF0000</item> <!--Barra de notificaciones-->
         <item name="colorOnPrimary">#FFFFFF</item>      <!--Color de letras en botones-->
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>  <!--Color de -->
@@ -19,8 +19,5 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.MyApplication.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

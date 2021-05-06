@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFinances">
         <activity android:name=".activities.RegisterActivity" />
-        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.LoginActivity"
+            android:theme="@style/Theme.MyFinances.NoActionBar"/>
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

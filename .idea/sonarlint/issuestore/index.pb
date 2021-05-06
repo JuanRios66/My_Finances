@@ -55,3 +55,11 @@ o
 ?app/src/main/java/com/juanrios66/myfinances/semanal_fragment.kt,3\6\3678cf3cd66b1b6c309b36d49e47f87ae583bbda
 m
 =app/src/main/java/com/juanrios66/myfinances/SplashActivity.kt,4\c\4cf6f2314ac12bfb62aa401ea40c09ed76c3d9a9
+Y
+)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
+z
+Japp/src/main/java/com/juanrios66/myfinances/ui/data/local/entities/User.kt,4\8\489ef692521d5779500328fe77d6f398aa4fef0d
+}
+Mapp/src/main/java/com/juanrios66/myfinances/ui/data/local/UsuariosDatabase.kt,8\e\8e6b1ef147a32cbf7295af6eed952a4e32a11eca
+x
+Happ/src/main/java/com/juanrios66/myfinances/ui/data/local/dao/UserDAO.kt,5\9\5987024b9dbaef90dea20a7f34ca577d8e2c388f
