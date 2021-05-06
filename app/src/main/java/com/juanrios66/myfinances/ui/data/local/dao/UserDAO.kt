@@ -12,7 +12,7 @@ interface UserDAO {
     fun deleteUser(user: User)
 
     @Query("SELECT*FROM tabla_usuarios where email LIKE:email")
-    fun searchUser(email:String) : User
+    fun searchUser(email: String): User
 
     @Update
     fun updateUser(user: User)
