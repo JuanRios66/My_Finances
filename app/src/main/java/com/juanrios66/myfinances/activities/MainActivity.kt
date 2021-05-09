@@ -1,4 +1,4 @@
-package com.juanrios66.myfinances
+package com.juanrios66.myfinances.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.juanrios66.myfinances.R
+import com.juanrios66.myfinances.Users
 import com.juanrios66.myfinances.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

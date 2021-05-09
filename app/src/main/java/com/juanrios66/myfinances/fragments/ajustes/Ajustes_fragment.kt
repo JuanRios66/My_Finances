@@ -1,4 +1,4 @@
-package com.juanrios66.myfinances
+package com.juanrios66.myfinances.fragments.ajustes
 
 import android.os.Bundle
 import android.view.LayoutInflater

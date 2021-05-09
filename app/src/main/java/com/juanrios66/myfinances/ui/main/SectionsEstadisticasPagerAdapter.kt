@@ -5,9 +5,9 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.juanrios66.myfinances.R
-import com.juanrios66.myfinances.estadisticas_fragment
-import com.juanrios66.myfinances.gastos_fragment
-import com.juanrios66.myfinances.ingresos_fragment
+import com.juanrios66.myfinances.fragments.estadisticas.estadisticas_fragment
+import com.juanrios66.myfinances.fragments.estadisticas.sub_fragments.gastos_fragment
+import com.juanrios66.myfinances.fragments.estadisticas.sub_fragments.ingresos_fragment
 
 private val TAB_TITLES = arrayOf(
     R.string.ingresos,

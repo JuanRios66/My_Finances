@@ -1,4 +1,4 @@
-package com.juanrios66.myfinances
+package com.juanrios66.myfinances.activities
 
 import Utils.EMPTY
 import Utils.emailValidator
@@ -9,7 +9,13 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
+import com.juanrios66.myfinances.MyFinancesApp
+import com.juanrios66.myfinances.R
+import com.juanrios66.myfinances.Users
 import com.juanrios66.myfinances.databinding.ActivityLoginBinding
+import com.juanrios66.myfinances.data.local.dao.UserDAO
+import com.juanrios66.myfinances.data.local.entities.User
+import java.sql.Types
 
 class LoginActivity : AppCompatActivity() {
 
@@ -19,7 +25,6 @@ class LoginActivity : AppCompatActivity() {
     private var banEmail = false
     private var banPass = false
     private var condicion = booleanArrayOf(false, false)
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -103,6 +108,14 @@ class LoginActivity : AppCompatActivity() {
             loginBinding.textemail.setText(EMPTY)
             loginBinding.textpassword.setText(EMPTY)
             usuarios.add(user)
+            guardarusuario(user.nickname.toString(), user.email.toString(), user.password.toString())
+
         }
+    }
+
+    private fun guardarusuario(name: String?, email: String?, password: String?) {
+        val usuario = User(id = Types.NULL, nombre = name, email = email, password = password)
+        val userdao: UserDAO = MyFinancesApp.database.userDao()
+        userdao.insertUser(usuario)
     }
 }
