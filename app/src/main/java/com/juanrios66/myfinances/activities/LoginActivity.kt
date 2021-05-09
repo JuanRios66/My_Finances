@@ -13,8 +13,8 @@ import com.juanrios66.myfinances.MyFinancesApp
 import com.juanrios66.myfinances.R
 import com.juanrios66.myfinances.Users
 import com.juanrios66.myfinances.databinding.ActivityLoginBinding
-import com.juanrios66.myfinances.ui.data.local.dao.UserDAO
-import com.juanrios66.myfinances.ui.data.local.entities.User
+import com.juanrios66.myfinances.data.local.dao.UserDAO
+import com.juanrios66.myfinances.data.local.entities.User
 import java.sql.Types
 
 class LoginActivity : AppCompatActivity() {
@@ -25,7 +25,6 @@ class LoginActivity : AppCompatActivity() {
     private var banEmail = false
     private var banPass = false
     private var condicion = booleanArrayOf(false, false)
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -110,12 +109,13 @@ class LoginActivity : AppCompatActivity() {
             loginBinding.textpassword.setText(EMPTY)
             usuarios.add(user)
             guardarusuario(user.nickname.toString(), user.email.toString(), user.password.toString())
+
         }
     }
-    //TODO esta mierda no esta funcionando
+
     private fun guardarusuario(name: String?, email: String?, password: String?) {
         val usuario = User(id = Types.NULL, nombre = name, email = email, password = password)
-        val userDAO: UserDAO = MyFinancesApp.database.UserDAO()
-        userDAO.insertUser(usuario)
+        val userdao: UserDAO = MyFinancesApp.database.userDao()
+        userdao.insertUser(usuario)
     }
 }

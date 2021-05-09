@@ -1,7 +1,7 @@
-package com.juanrios66.myfinances.ui.data.local.dao
+package com.juanrios66.myfinances.data.local.dao
 
 import androidx.room.*
-import com.juanrios66.myfinances.ui.data.local.entities.User
+import com.juanrios66.myfinances.data.local.entities.User
 
 @Dao
 interface UserDAO {
@@ -11,7 +11,7 @@ interface UserDAO {
     @Delete
     fun deleteUser(user: User)
 
-    @Query("SELECT*FROM tabla_usuarios where email LIKE:email")
+    @Query("SELECT*FROM tabla_usuario where email LIKE:email")
     fun searchUser(email: String): User
 
     @Update

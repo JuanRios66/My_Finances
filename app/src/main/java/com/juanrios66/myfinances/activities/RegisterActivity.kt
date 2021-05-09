@@ -9,14 +9,9 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
-import com.juanrios66.myfinances.MyFinancesApp
 import com.juanrios66.myfinances.R
 import com.juanrios66.myfinances.Users
 import com.juanrios66.myfinances.databinding.ActivityRegisterBinding
-import com.juanrios66.myfinances.ui.data.local.dao.UserDAO
-import com.juanrios66.myfinances.ui.data.local.entities.User
-import java.sql.Types
-import java.sql.Types.NULL
 
 class RegisterActivity : AppCompatActivity() {
 

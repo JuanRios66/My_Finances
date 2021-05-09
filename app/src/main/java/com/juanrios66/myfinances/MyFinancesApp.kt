@@ -2,21 +2,21 @@ package com.juanrios66.myfinances
 
 import android.app.Application
 import androidx.room.Room
-import com.juanrios66.myfinances.ui.data.local.UsuariosDatabase
+import com.juanrios66.myfinances.data.local.UserDatabase
 
-class MyFinancesApp: Application() {
+class MyFinancesApp:Application() {
 
     companion object{
-        lateinit var database: UsuariosDatabase
+        lateinit var database: UserDatabase
     }
 
     override fun onCreate() {
         super.onCreate()
 
-        database = Room.databaseBuilder(
+        database= Room.databaseBuilder(
             this,
-            UsuariosDatabase::class.java,
-            "usuarios.db"
+            UserDatabase::class.java,
+            "user.db"
         ).allowMainThreadQueries()
             .build()
     }
